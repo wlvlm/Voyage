@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    background: grey;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    padding: 3vh 12vw;
+    justify-content: flex-end;
+    gap: 5em;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.wrapper{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    padding-block: 5vh;
+}
+
+.card{
+    border: 1px solid black;
+    width: 500px;
+    overflow: hidden;
+    -webkit-box-shadow: 6px 6px 8px -3px rgba(0,0,0,0.7); 
+    box-shadow: 6px 6px 8px -3px rgba(0,0,0,0.7);
+}
+
+img{
+    object-fit: cover;
+    width: 500px;
+    height: 400px;
+}
+
+.cardContainer{
+    width: 100%;
+    padding: 25px;
+    position: relative;
+}
+
+.cardTitle{
+    font-size: 2em;
+    margin-block: 2vh;
+}
+
+.cardContent{
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-wrap: pretty;
+    margin-bottom: 2vh;
+}
+
+.cardBtn{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2em;
+    color: white;
+    padding: .5em .8em;
+    border: none;
+    background-color: purple;
+    transition: all .3s ease-in-out;
+}
+
+.cardBtn.T{
+    background-color: crimson;
+}
+
+.cardBtn.N{
+    background-color: steelblue;
+}
+
+.cardBtn:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
